@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <DigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            
+            android:textSize="45dp" />
+
+        <TextView
+            android:id="@+id/gsmSignal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/digitalClock1"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/location"
+            android:text="1"
+            android:textSize="45dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            
+            
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+           
+           
+           
+            android:text="Location"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/extTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/digitalClock1"
+            android:text="10"
+            android:textSize="45dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/border" />
+
+   <android.support.v4.view.ViewPager
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:id="@+id/pager"
+    android:layout_weight="1"
+    />
+
+
+<com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="70dp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</LinearLayout>
+
+</LinearLayout>
